@@ -33,9 +33,9 @@ public:
     //constructor
     Lista() : inicio(NULL), contador(0) {}
 
-    //Métodos
+    //funciones
     void push(Persona* datos);
-    Persona* pop();
+    Persona* obtener();
     int contar();
     bool estaVacia();
     void limpiar();
@@ -52,7 +52,7 @@ void Lista::push(Persona* datos) {
     contador++;
 }
 
-Persona* Lista::pop() {
+Persona* Lista::obtener() {
     //elimina y devuelve el ultimo nodo agregado
     if (inicio != NULL) {
         Nodo* temp = inicio;
@@ -116,7 +116,7 @@ int main() {
             pila.push(new Persona(nombre, apellido, registro, edad));
         }
         if (opcion == 'b') {
-            Persona* ultimoElemento = pila.pop();
+            Persona* ultimoElemento = pila.obtener();
             if (ultimoElemento != NULL) {
                 cout << "Datos obtenidos: " << endl;
                 cout << "Nombre: " << ultimoElemento->nombre << endl;
