@@ -87,9 +87,11 @@ int main() {
     Lista pila;
     char opcion;
 
-    pila.push(new Persona("Ana", "Garcia", 12345, 30));
-    pila.push(new Persona("Carlos", "Martinez", 54321, 25));
-    pila.push(new Persona("Elena", "Lopez", 98765, 40));
+    pila.push(new Persona("Ana", "Garcia", 22100191, 30));
+    pila.push(new Persona("Carlos", "Martinez", 22100192, 25));
+    pila.push(new Persona("Elena", "Lopez", 22100193, 40));
+    pila.push(new Persona("Carlos", "Martinez", 22100194, 25));
+    pila.push(new Persona("Elena", "Lopez", 22100195, 40));
 
     //Menu
     while (true) {
